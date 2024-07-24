@@ -1,0 +1,38 @@
+.about {
+  padding: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  .about-left {
+    position: relative;
+    .img {
+      width: 450px;
+      border-radius: 10px;
+    }
+    .play-img {
+      position: absolute;
+      width: 60px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .about-right {
+    margin-left: 15px;
+    & h3 {
+      font-weight: 600;
+      color: #212ea0;
+    }
+    & h2 {
+      font-size: 35px;
+      color: #000f38;
+      margin: 10px 0;
+      max-width: 400px;
+    }
+    & p {
+      color: #676767;
+      margin-bottom: 15px;
+    }
+  }
+}

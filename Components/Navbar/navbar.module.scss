@@ -1,0 +1,109 @@
+nav {
+    padding : 20px;
+}
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    background-color: #212ea0;
+    
+    .graduate-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .graduate-img {
+        width: 180px;
+    
+    }
+    ul {
+        list-style: none;
+        padding-left: 0;
+        li{
+            display: inline-block;
+            padding: 0 10px;
+            a{
+                font-size: 16px;
+                color: #fff;
+                cursor: pointer;
+                transition: all 0.2s ease-in;
+                position: relative;
+            }
+            a::after {
+                content: '';
+                position: absolute;
+                background-color: #ff3c78;
+                bottom: -5px;
+                left: 0;
+                width: 0;
+                height: 3px;
+            }
+            a:hover::after {
+                width: 100%;
+                transition: all 0.4s ease-out;
+                
+            }
+            
+        }
+
+    }
+}
+.dark-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    background-color: transparent;
+    transition : 0.5s;
+    .graduate-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .graduate-img {
+        width: 180px;
+    
+    }
+    ul {
+        list-style: none;
+        padding-left: 0;
+        li{
+            display: inline-block;
+            padding: 0 10px;
+            a{
+                font-size: 16px;
+                color: #fff;
+                cursor: pointer;
+                transition: all 0.2s ease-in;
+                position: relative;
+            }
+            a::after {
+                content: '';
+                position: absolute;
+                background-color: #ff3c78;
+                bottom: -5px;
+                left: 0;
+                width: 0;
+                height: 3px;
+            }
+            a:hover::after {
+                width: 100%;
+                transition: all 0.4s ease-out;
+                
+            }
+            
+        }
+
+    }
+}

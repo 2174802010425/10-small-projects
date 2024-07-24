@@ -1,0 +1,42 @@
+.program-container {
+    padding: 9%;
+    
+    .programs {
+        margin-top: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        & img {
+            width: 330px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .program {
+            position: relative;
+            
+            .action {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                color: #fff;
+                background-color: #000f984d;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                transition: all 0.4s ease;
+                img {
+                    width: 40px;
+                }
+            }
+            &:hover .action {
+                opacity: 1;
+            }
+        }
+
+    }
+}
